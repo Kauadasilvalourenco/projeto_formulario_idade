@@ -28,6 +28,14 @@ function verificar() {
 
     if (anoNascimento > anoAtual || calculoIdade > 125) {
         idade.innerHTML = `[ERRO!] Informação inválida. Ano acima do atual ou idade acima de 125 anos. Por favor verifique!`
+        imagemBebeHomem.style.display = "none"
+        imagemBebeMulher.style.display = "none"
+        imagemHomemAdolescente.style.display = "none"
+        imagemMulherAdolescente.style.display = "none"
+        imagemHomemAdulto.style.display = "none"
+        imagemMulherAdulta.style.display = "none"
+        imagemHomemIdoso.style.display = "none"
+        imagemMulherIdosa.style.display = "none"
     }
     else {
         if (calculoIdade > 0 && calculoIdade < 14 && sexoMasculino == true) {
