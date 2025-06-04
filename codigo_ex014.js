@@ -75,6 +75,7 @@ function verificar() {
             }
             else {
                 if (calculoIdade >= 14 && calculoIdade < 23 && sexoFeminino == true) {
+                    idade.innerHTML = `Sua idade é: ${calculoIdade} anos`
                     imagemBebeHomem.style.display = "none"
                     imagemBebeMulher.style.display = "none"
                     imagemHomemAdolescente.style.display = "none"
@@ -98,6 +99,7 @@ function verificar() {
                     }
                     else {
                         if (calculoIdade >= 23 && calculoIdade < 60 && sexoFeminino == true) {
+                            idade.innerHTML = `Sua idade é: ${calculoIdade} anos`
                             imagemBebeHomem.style.display = "none"
                             imagemBebeMulher.style.display = "none"
                             imagemHomemAdolescente.style.display = "none"
