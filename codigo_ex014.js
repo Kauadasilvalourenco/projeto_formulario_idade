@@ -26,7 +26,11 @@ function verificar() {
     // variáveis que recebem valores dos inputs
     var calculoIdade = anoAtual - anoNascimento
 
-    if (calculoIdade > 0 && calculoIdade < 14 && sexoMasculino == true) {
+    if (anoNascimento > anoAtual || calculoIdade > 125) {
+        idade.innerHTML = `[ERRO!] Informação inválida. Ano acima do atual ou idade acima de 125 anos. Por favor verifique!`
+    }
+    else {
+        if (calculoIdade > 0 && calculoIdade < 14 && sexoMasculino == true) {
         idade.innerHTML = `Sua idade é: ${calculoIdade} anos`
         imagemBebeHomem.style.display = "block"
         imagemBebeMulher.style.display = "none"
@@ -124,5 +128,5 @@ function verificar() {
             }
         }
     }
-
+    }
 }
