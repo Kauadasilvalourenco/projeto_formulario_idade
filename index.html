@@ -3,69 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de Idade</title>
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilo_ex014.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Verificador de Idade</title>
 </head>
 <body>
-
     <h1>Verificador de Idade</h1>
-
-    <div id="fundo_imagens">
+    <div id="conteudo">
         <p>
-            Ano de Nascimento: <input type="number" name="txt_ano_nascimento" id="txt_ano_nascimento" placeholder="Ex: 2000">
+            Digite o ano de Nascimento:  <input type="number" name="txt_ano_nascimento" id="txt_ano_nascimento">
         </p>
         <p>
-            Sexo: <input type="checkbox" name="sexo_masculino" id="sexo_masculino"> Masculino
-            
-            <input type="checkbox" name="sexo_feminino" id="sexo_feminino"> Feminino
+            Sexo: <input type="radio" name="radsex" id="sexo_masculino" checked>
+            <label for="sexo_masculino">Masculino</label>
+            <input type="radio" name="radsex" id="sexo_feminino">
+            <label for="sexo_feminino">Feminino</label>
         </p>
-        <input type="button" value="Verificar" id="botao_verificar">
-
-        <p id="idade">Preencha os campos</p>
-
-        <picture>
-            <source media="(max-width: 350px)" srcset="imagens/bebe_homem_pq.png">
-            <img src="imagens/bebe_homem.png" alt="bebê" id="imagem_bebe_homem">
-        </picture>
-
-        <picture>
-            <source media="(max-width: 350px)" srcset="imagens/bebe_mulher_pq.png">
-            <img src="imagens/bebe_mulher.png" alt="bebê" id="imagem_bebe_mulher">
-        </picture>
-
-        <picture>
-            <source media="(max-width: 350px)" srcset="imagens/adolescente_homem_pq.png">
-            <img src="imagens/adolescente_homem.png" alt="adolescente" id="imagem_homem_adolescente">
-        </picture>
-
-        <picture>
-            <source media="(max-width: 350px)" srcset="imagens/adolescente_mulher_pq.png">
-            <img src="imagens/adolescente_mulher.png" alt="adolescente" id="imagem_mulher_adolescente">
-        </picture>
-
-        <picture>
-            <source media="(max-width: 350px)" srcset="imagens/homem_adulto_pq.png">
-            <img src="imagens/homem_adulto.png" alt="homem" id="imagem_homem_adulto">
-        </picture>
-
-        <picture>
-            <source media="(max-width: 350px)" srcset="imagens/mulher_adulta_pq.png">
-            <img src="imagens/mulher_adulta.png" alt="mulher" id="imagem_mulher_adulta">
-        </picture>
-
-        <picture>
-            <source media="(max-width: 350px)" srcset="imagens/homem_idoso_pq.png">
-            <img src="imagens/homem_idoso.png" alt="idoso" id="imagem_homem_idoso">
-        </picture>
-
-        <picture>
-            <source media="(max-width: 350px)" srcset="imagens/mulher_idosa_pq.png">
-            <img src="imagens/mulher_idosa.png" alt="idosa" id="imagem_mulher_idosa">
-        </picture>
-
+        <input type="button" value="Enviar" id="botao_enviar"> 
+        <p id="resultado">Preencha as infomações</p>
+        <div id="imagem">
+            <picture>
+                <img id="imagem_resultado" src="" alt="">
+            </picture>
+        </div>
     </div>
-    
-    <script src="codigo_ex014.js"></script>
+
+    <script src="codigo.js"></script>
 </body>
 </html>
